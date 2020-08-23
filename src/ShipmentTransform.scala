@@ -18,7 +18,7 @@ object ShipmentTransform extends App {
   val df = spark.read
     .format("json")
     .option("multiline", true)
-    .load("shipment.json")
+    .load("data/shipment.json")
 
   df.printSchema()
 
